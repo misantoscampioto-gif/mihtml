@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+<img src="img/tela.gato.gif" 
+     class="w-100 d-block"
+     style="height: 300px; object-fit: cover;">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html">Meu Site</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="menu">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+          <a class="nav-link active" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="sobre.html">Sobre</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contato.html">Contato</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- CAROUSEL AJUSTADO -->
+<div id="carouselExample" class="carousel slide container mt-4">
+  <div class="carousel-inner">
+
+    <div class="carousel-item active text-center">
+      <img src="img/cat.png" class="img-fluid" style="max-height: 300px; object-fit: contain;">
+    </div>
+
+    <div class="carousel-item text-center">
+      <img src="img/mushroom.png" class="img-fluid" style="max-height: 300px; object-fit: contain;">
+    </div>
+
+  </div>
+</div>
+
+<!-- CONTEÚDO -->
+<div class="container mt-4">
+
+  <!-- ALERTAS -->
+  <div class="row g-3">
+    <div class="col-md-4 col-sm-12">
+      <div class="alert alert-primary text-center">Alerta 1</div>
+    </div>
+    <div class="col-md-4 col-sm-12">
+      <div class="alert alert-success text-center">Alerta 2</div>
+    </div>
+    <div class="col-md-4 col-sm-12">
+      <div class="alert alert-warning text-center">Alerta 3</div>
+    </div>
+  </div>
+
+  <!-- TÍTULO -->
+  <h2 class="mt-4 mb-3 text-center">Nossos Produtos</h2>
+
+  <!-- CARDS -->
+  <div class="row g-4">
+
+    <div class="col-md-6 col-sm-12">
+      <div class="card h-100 shadow text-center">
+        <img src="img/sunflower.png" class="img-fluid mx-auto mt-3" style="max-width: 200px;">
+        <div class="card-body">
+          <h5>Sunflower</h5>
+          <p>Um lindo girassol para enfeitar seus trabalhos.</p>
+          <a href="#" class="btn btn-primary">Saiba Mais</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6 col-sm-12">
+      <div class="card h-100 shadow text-center">
+        <img src="img/mushroom.png" class="img-fluid mx-auto mt-3" style="max-width: 200px;">
+        <div class="card-body">
+          <h5>Mushroom</h5>
+          <p>Adesivo de cogumelo para enfeitar seus trabalhos. </p>
+          <a href="#" class="btn btn-primary">Saiba Mais</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
