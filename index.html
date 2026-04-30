@@ -4,17 +4,44 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home</title>
-<img src="img/tela.gato.gif" 
-     class="w-100 d-block"
-     style="height: 300px; object-fit: cover;">
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body{
+      background-color: #f5f5f5;
+    }
+
+    .card{
+      transition: 0.3s;
+      border: none;
+      border-radius: 15px;
+    }
+
+    .card:hover{
+      transform: scale(1.03);
+      box-shadow: 0 0 20px rgba(0,0,0,0.2);
+    }
+
+    .btn-primary{
+      border-radius: 20px;
+    }
+
+    footer iframe{
+      border-radius: 10px;
+    }
+  </style>
 </head>
 
 <body>
 
+<!-- GIF TOPO -->
+<img src="img/tela.gato.gif" 
+     class="w-100 d-block"
+     style="height: 300px; object-fit: cover;">
+
 <!-- NAVBAR -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow">
   <div class="container-fluid">
     <a class="navbar-brand" href="index.html">Meu Site</a>
 
@@ -24,23 +51,17 @@
 
     <div class="collapse navbar-collapse" id="menu">
       <ul class="navbar-nav me-auto">
-        <li class="nav-item">
-          <a class="nav-link active" href="index.html">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="sobre.html">Sobre</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="contato.html">Contato</a>
-        </li>
+        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre</a></li>
+        <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
       </ul>
     </div>
   </div>
 </nav>
 
-<!-- CAROUSEL AJUSTADO -->
-<div id="carouselExample" class="carousel slide container mt-4">
-  <div class="carousel-inner">
+<!-- CAROUSEL AUTOMÁTICO -->
+<div id="carouselExample" class="carousel slide container mt-4 shadow" data-bs-ride="carousel" data-bs-interval="2000">
+  <div class="carousel-inner bg-white rounded p-3">
 
     <div class="carousel-item active text-center">
       <img src="img/cat.png" class="img-fluid" style="max-height: 300px; object-fit: contain;">
@@ -48,6 +69,10 @@
 
     <div class="carousel-item text-center">
       <img src="img/mushroom.png" class="img-fluid" style="max-height: 300px; object-fit: contain;">
+    </div>
+
+    <div class="carousel-item text-center">
+      <img src="img/rocket.gif" class="img-fluid" style="max-height: 300px; object-fit: contain;">
     </div>
 
   </div>
@@ -58,26 +83,18 @@
 
   <!-- ALERTAS -->
   <div class="row g-3">
-    <div class="col-md-4 col-sm-12">
-      <div class="alert alert-primary text-center">Alerta 1</div>
-    </div>
-    <div class="col-md-4 col-sm-12">
-      <div class="alert alert-success text-center">Alerta 2</div>
-    </div>
-    <div class="col-md-4 col-sm-12">
-      <div class="alert alert-warning text-center">Alerta 3</div>
-    </div>
+    <div class="col-md-4"><div class="alert alert-primary text-center shadow">Alerta 1</div></div>
+    <div class="col-md-4"><div class="alert alert-success text-center shadow">Alerta 2</div></div>
+    <div class="col-md-4"><div class="alert alert-warning text-center shadow">Alerta 3</div></div>
   </div>
 
-  <!-- TÍTULO -->
-  <h2 class="mt-4 mb-3 text-center">Nossos Produtos</h2>
+  <h2 class="mt-5 mb-4 text-center">Nossos Produtos</h2>
 
-  <!-- CARDS -->
   <div class="row g-4">
 
-    <div class="col-md-6 col-sm-12">
-      <div class="card h-100 shadow text-center">
-        <img src="img/sunflower.png" class="img-fluid mx-auto mt-3" style="max-width: 200px;">
+    <div class="col-md-4">
+      <div class="card h-100 shadow text-center p-3">
+        <img src="img/sunflower.png" class="img-fluid mx-auto" style="max-width: 180px;">
         <div class="card-body">
           <h5>Sunflower</h5>
           <p>Um lindo girassol para enfeitar seus trabalhos.</p>
@@ -86,34 +103,31 @@
       </div>
     </div>
 
-    <div class="col-md-6 col-sm-12">
-      <div class="card h-100 shadow text-center">
-        <img src="img/mushroom.png" class="img-fluid mx-auto mt-3" style="max-width: 200px;">
+    <div class="col-md-4">
+      <div class="card h-100 shadow text-center p-3">
+        <img src="img/mushroom.png" class="img-fluid mx-auto" style="max-width: 180px;">
         <div class="card-body">
           <h5>Mushroom</h5>
-          <p>Adesivo de cogumelo para enfeitar seus trabalhos. </p>
+          <p>Adesivo de cogumelo para enfeitar seus trabalhos.</p>
           <a href="#" class="btn btn-primary">Saiba Mais</a>
         </div>
       </div>
     </div>
 
-
-    <div class="col-md-6 col-sm-12">
-      <div class="card h-100 shadow text-center">
-        <img src="img/rocket.gif" class="img-fluid mx-auto mt-3" style="max-width: 200px;">
+    <div class="col-md-4">
+      <div class="card h-100 shadow text-center p-3">
+        <img src="img/rocket.gif" class="img-fluid mx-auto" style="max-width: 180px;">
         <div class="card-body">
           <h5>Rocket</h5>
-          <p>Um Gif de foguete prestes a ir para o espaço.</p>
+          <p>Um gif de foguete prestes a ir para o espaço.</p>
           <a href="#" class="btn btn-primary">Saiba Mais</a>
         </div>
       </div>
     </div>
 
-     
-
-    <div class="col-md-6 col-sm-12">
-      <div class="card h-100 shadow text-center">
-        <img src="img/meteor-rain.gif" class="img-fluid mx-auto mt-3" style="max-width: 200px;">
+    <div class="col-md-4">
+      <div class="card h-100 shadow text-center p-3">
+        <img src="img/meteor-rain.gif" class="img-fluid mx-auto" style="max-width: 180px;">
         <div class="card-body">
           <h5>Meteor Rain</h5>
           <p>Gif de uma chuva de meteoros animada.</p>
@@ -122,35 +136,61 @@
       </div>
     </div>
 
-     
-
-    <div class="col-md-6 col-sm-12">
-      <div class="card h-100 shadow text-center">
-        <img src="img/coffee-cup.png" class="img-fluid mx-auto mt-3" style="max-width: 200px;">
+    <div class="col-md-4">
+      <div class="card h-100 shadow text-center p-3">
+        <img src="img/coffee-cup.png" class="img-fluid mx-auto" style="max-width: 180px;">
         <div class="card-body">
           <h5>Coffee Cup</h5>
-          <p>Um adesivo de copo de café com muito amor para alegrar o dia.</p>
+          <p>Um adesivo de copo de café com muito amor.</p>
           <a href="#" class="btn btn-primary">Saiba Mais</a>
         </div>
       </div>
     </div>
 
-  
-
-    <div class="col-md-6 col-sm-12">
-      <div class="card h-100 shadow text-center">
-        <img src="img/i-love-you.png" class="img-fluid mx-auto mt-3" style="max-width: 200px;">
+    <div class="col-md-4">
+      <div class="card h-100 shadow text-center p-3">
+        <img src="img/i-love-you.png" class="img-fluid mx-auto" style="max-width: 180px;">
         <div class="card-body">
           <h5>The Dog Loves You</h5>
-          <p>Um Adesivo de um cachorro muito carinhoso.</p>
+          <p>Um adesivo de um cachorro muito carinhoso.</p>
           <a href="#" class="btn btn-primary">Saiba Mais</a>
         </div>
       </div>
     </div>
-
 
   </div>
 </div>
+
+<!-- FOOTER PROFISSIONAL -->
+<footer class="bg-dark text-white mt-5 p-5">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-md-6 mb-4">
+        <h4 class="mb-3">Nosso Endereço</h4>
+        <iframe 
+src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14657.157298519245!2d-47.2104516!3d-23.0884086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cf4c9f0d4b67d9%3A0x8e5b4b74b7f6f7f4!2sIndaiatuba%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1714480000000!5m2!1spt-BR!2sbr"
+width="100%" 
+height="250" 
+style="border:0; border-radius:10px;" 
+allowfullscreen="" 
+loading="lazy"
+referrerpolicy="no-referrer-when-downgrade">
+</iframe>
+      </div>
+
+      <div class="col-md-6 mb-4">
+        <h4 class="mb-3">Conheça Nosso Trabalho</h4>
+       <iframe width="560" height="315" src="https://www.youtube.com/embed/7Gh80WbCSRk?si=UUsUClyu4EEJcO2O" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+
+    </div>
+
+    <hr>
+
+    <p class="text-center">© 2026 Meu Site - Todos os direitos reservados</p>
+  </div>
+</footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 
